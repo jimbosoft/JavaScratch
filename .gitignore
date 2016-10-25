@@ -1,0 +1,20 @@
+/target/
+/deploy/
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+.project
+.classpath
+.settings
+.idea
+/log/
+*.iml
+*.releaseBackup
+*release.properties
+*.crc
+
+.DS_Store
