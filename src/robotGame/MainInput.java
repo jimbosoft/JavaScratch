@@ -5,6 +5,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import onlineTest.SolutionIter;
+
 public class MainInput
 {
 	static List<String> cluster = new ArrayList<String>();
@@ -12,20 +14,13 @@ public class MainInput
 	
 	public static void main(String[] args)
 	{
-//		int[] test1 = {1082132608, 0, 1082132608};		
-//		System.out.println("Got: " + solution(test1));
-		
-//		String stringToBeParsed = "The quick brown fox jumped over the lazy dog";
 		StringReader strReader = new StringReader("  10 34 - 11 \n 42");
 		FileReader fileReader = null;
-		BufferedReader bufReader = null;
 		try
 		{
 			fileReader = new FileReader("inp.txt");
-			bufReader = new BufferedReader(fileReader);
 			
-			Reader reader = bufReader;
-			for (Integer x : new SolutionIter(strReader)) 
+			for (Integer x : new SolutionIter(fileReader)) 
 			{
 				 System.out.println(x);
 			}
